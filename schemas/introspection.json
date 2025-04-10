@@ -1,0 +1,4177 @@
+{
+	"data": {
+		"__schema": {
+			"types": [
+				{
+					"name": "AdminDirection",
+					"fields": [
+						{
+							"name": "color",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "icons",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idPwc",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "marks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": "Year",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "yearId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "AdminMark",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataSource",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataSourceEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataYear",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "direction",
+							"type": {
+								"name": "AdminDirection",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "directionId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "hasSmarteks",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idPwc",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "markType",
+							"type": {
+								"name": "MarkType",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "oesr",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "priority",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "published",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "ru",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "smartekCode",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "smarteks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "unit",
+							"type": {
+								"name": "Unit",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "weight",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "yearId",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "Agglomeration",
+					"fields": [
+						{
+							"name": "agglomerationMarks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "photos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "secondaryPhotos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "AgglomerationData",
+					"fields": [
+						{
+							"name": "directionsData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "marksData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "AgglomerationMark",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "mark",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "markId",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "AttachFile",
+					"fields": [
+						{
+							"name": "contentType",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "extension",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "filename",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "size",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "title",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "titleEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "url",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "AttachText",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "text",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "textEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Banner",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "link",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Boolean",
+					"fields": null
+				},
+				{
+					"name": "City",
+					"fields": [
+						{
+							"name": "centerLat",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "centerLng",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityType",
+							"type": {
+								"name": "CityType",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "cluster",
+							"type": {
+								"name": "Cluster",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "clusterId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionIkp",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionIkpEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idPwc",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "isRus",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "photos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "subject",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "subjectCode",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "CityData",
+					"fields": [
+						{
+							"name": "directionsData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "marksData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "marksPointData",
+							"type": {
+								"name": "JSON",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "CityStats",
+					"fields": [
+						{
+							"name": "directions",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "CityType",
+					"fields": [
+						{
+							"name": "cities",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Cluster",
+					"fields": [
+						{
+							"name": "cities",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "creativeName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "creativeNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "ClusterStats",
+					"fields": [
+						{
+							"name": "cities",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "directions",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "Content",
+					"fields": [
+						{
+							"name": "citiesDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "citiesDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "databaseDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "databaseDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "mapDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "mapDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDescOne",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDescOneEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDescTwo",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "metodologyDescTwoEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "platformDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "platformDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "platformTaskDesc",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "platformTaskDescEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "CreativeDirection",
+					"fields": [
+						{
+							"name": "average",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "color",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "creativeMarks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "icons",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "CreativeMark",
+					"fields": [
+						{
+							"name": "averageClusters",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativeDirection",
+							"type": {
+								"name": "CreativeDirection",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "creativeDirectionId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "directionColor",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unit",
+							"type": {
+								"name": "Unit",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "unitShort",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unitShortEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "zeroMax",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "CreativeMarkValue",
+					"fields": [
+						{
+							"name": "absValue",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unitShort",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unitShortEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "CreativePage",
+					"fields": [
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "materialBlocks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "publish",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "title",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "titleEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Direction",
+					"fields": [
+						{
+							"name": "color",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "icons",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idPwc",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "marks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": "Year",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "yearId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "DirectionMultiplierInput",
+					"fields": null
+				},
+				{
+					"name": "EsgCity",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgCluster",
+							"type": {
+								"name": "EsgCluster",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "esgCompanies",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idEsg",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "EsgCluster",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idEsg",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "EsgCompany",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "link",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "photos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "EsgContent",
+					"fields": [
+						{
+							"name": "description",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "logo",
+							"type": {
+								"name": "Icon",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "logoEng",
+							"type": {
+								"name": "Icon",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "researchFile",
+							"type": {
+								"name": "AttachFile",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "researchFileEng",
+							"type": {
+								"name": "AttachFile",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "title",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "titleEng",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "EsgDirection",
+					"fields": [
+						{
+							"name": "color",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "esgMarks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idEsg",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "EsgMark",
+					"fields": [
+						{
+							"name": "dataSource",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataSourceEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataYear",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "esgDirection",
+							"type": {
+								"name": "EsgDirection",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "esgDirectionColor",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "esgDirectionId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idEsg",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "markType",
+							"type": {
+								"name": "MarkType",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "priority",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "published",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "unit",
+							"type": {
+								"name": "Unit",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "unitShort",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unitShortEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Feedback",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "email",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "files",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "fromUser",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "fullname",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "status",
+							"type": {
+								"name": "FeedbackStatus",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "text",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "userId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "FeedbackCreateInput",
+					"fields": null
+				},
+				{
+					"name": "FeedbackStatus",
+					"fields": null
+				},
+				{
+					"name": "FileCreateInput",
+					"fields": null
+				},
+				{
+					"name": "Float",
+					"fields": null
+				},
+				{
+					"name": "ID",
+					"fields": null
+				},
+				{
+					"name": "Icon",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "resizedUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "thumbUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "url",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "vignetteResizedUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "vignetteUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Int",
+					"fields": null
+				},
+				{
+					"name": "JSON",
+					"fields": null
+				},
+				{
+					"name": "Link",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "link",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "title",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "titleEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "MapCitySelection",
+					"fields": [
+						{
+							"name": "averageClusterValue",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "averageValue",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "centerLat",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "centerLng",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transparencyPercent",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Mark",
+					"fields": [
+						{
+							"name": "dataSource",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataSourceEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "dataYear",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "direction",
+							"type": {
+								"name": "Direction",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "directionColor",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "directionId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "hasSmarteks",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "idPwc",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "markType",
+							"type": {
+								"name": "MarkType",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "oesr",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "priority",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "published",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "ru",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "smartekCode",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "smarteks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "unit",
+							"type": {
+								"name": "Unit",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "unitShort",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "unitShortEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "weight",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "yearId",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "MarkType",
+					"fields": null
+				},
+				{
+					"name": "MarkValue",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "MaterialBlock",
+					"fields": [
+						{
+							"name": "files",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "links",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "texts",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "width",
+							"type": {
+								"name": "Width",
+								"kind": "ENUM"
+							}
+						}
+					]
+				},
+				{
+					"name": "Mutation",
+					"fields": [
+						{
+							"name": "authorizedFeedbackCreate",
+							"type": {
+								"name": "Feedback",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "feedbackCreate",
+							"type": {
+								"name": "Feedback",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "fileCreate",
+							"type": {
+								"name": "AttachFile",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "fileDestroy",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "fileUpdate",
+							"type": {
+								"name": "AttachFile",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "sessionCreate",
+							"type": {
+								"name": "Session",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "sessionDestroy",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "sessionRefresh",
+							"type": {
+								"name": "Session",
+								"kind": "OBJECT"
+							}
+						}
+					]
+				},
+				{
+					"name": "News",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "materialBlocks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "publish",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "publishTime",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "tags",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "text",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "textEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "title",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "titleEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "OrderDir",
+					"fields": null
+				},
+				{
+					"name": "OrderInput",
+					"fields": null
+				},
+				{
+					"name": "OrderType",
+					"fields": null
+				},
+				{
+					"name": "Partner",
+					"fields": [
+						{
+							"name": "engPhotos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "link",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "photos",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Photo",
+					"fields": [
+						{
+							"name": "engResizedUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "engThumbUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "engUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "resizedUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "thumbUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "url",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "vignetteResizedUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "vignetteUrl",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Query",
+					"fields": [
+						{
+							"name": "agglomerations",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "banners",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "cities",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "cityMarkDataYear",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "cityTypes",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "clusters",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "contents",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativeDirections",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativeDirectionsData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativeMarks",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativeMarksData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "creativePages",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "directions",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "downloadAgglomeration",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "downloadCity",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "esgCities",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgClusters",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgCompanies",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgContents",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgDirections",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "esgMarks",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getAgglomerationsDbData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getClustersRatingData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getCreativeClustersRatingData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getCreativeDbData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getCreativeRatingData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getDbData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getDirectionDynamic",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getEsgDbData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getLogs",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getMapCitiesByDirection",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getMapCitiesByMark",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getMarkDynamic",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getParamsRank",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getProfile",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getRatingData",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "getTopCitiesByDirection",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "getTopCitiesByMark",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "marks",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "news",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "oesrCities",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "partners",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "researches",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "subindices",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "tags",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "years",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "RankCitySelection",
+					"fields": [
+						{
+							"name": "cityId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityTypeId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityTypeName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityTypeNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "percent",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "resultSum",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "RatingStats",
+					"fields": [
+						{
+							"name": "clusters",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "directions",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "Research",
+					"fields": [
+						{
+							"name": "color",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "icons",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "materialBlocks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "researchKeys",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "ResearchKey",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Session",
+					"fields": [
+						{
+							"name": "accessToken",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "expiresIn",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "refreshToken",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "user",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "Smartek",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "result",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "slug",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "task",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "url",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "String",
+					"fields": null
+				},
+				{
+					"name": "Subindex",
+					"fields": [
+						{
+							"name": "buttonName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "buttonNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "link",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "subindexPage",
+							"type": {
+								"name": "SubindexPage",
+								"kind": "OBJECT"
+							}
+						}
+					]
+				},
+				{
+					"name": "SubindexPage",
+					"fields": [
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "descriptionEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "files",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "materialBlocks",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Tag",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Timestamp",
+					"fields": null
+				},
+				{
+					"name": "TopCitySelection",
+					"fields": [
+						{
+							"name": "cityTypeName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "cityTypeNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterName",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "clusterNameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "placeNum",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "transliteratedTitle",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Unit",
+					"fields": [
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "nameEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "short",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "shortEng",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Upload",
+					"fields": null
+				},
+				{
+					"name": "User",
+					"fields": [
+						{
+							"name": "apiKey",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "appointment",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "createdAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "email",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "firstName",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "images",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "lastName",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "organisation",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "patronymic",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "UserLog",
+					"fields": [
+						{
+							"name": "action",
+							"type": {
+								"name": "UserLogAction",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "createdAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "ipAddress",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "userId",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "UserLogAction",
+					"fields": null
+				},
+				{
+					"name": "ValueByYears",
+					"fields": [
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "refValue",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "value",
+							"type": {
+								"name": "Float",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "Width",
+					"fields": null
+				},
+				{
+					"name": "Year",
+					"fields": [
+						{
+							"name": "createdAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "defaultSelected",
+							"type": {
+								"name": "Boolean",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "id",
+							"type": {
+								"name": "ID",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "position",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "status",
+							"type": {
+								"name": "YearStatus",
+								"kind": "ENUM"
+							}
+						},
+						{
+							"name": "updatedAt",
+							"type": {
+								"name": "Timestamp",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "year",
+							"type": {
+								"name": "Int",
+								"kind": "SCALAR"
+							}
+						}
+					]
+				},
+				{
+					"name": "YearStatus",
+					"fields": null
+				},
+				{
+					"name": "__Directive",
+					"fields": [
+						{
+							"name": "args",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "locations",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "__DirectiveLocation",
+					"fields": null
+				},
+				{
+					"name": "__EnumValue",
+					"fields": [
+						{
+							"name": "deprecationReason",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "isDeprecated",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "__Field",
+					"fields": [
+						{
+							"name": "args",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "deprecationReason",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "isDeprecated",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "type",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "__InputValue",
+					"fields": [
+						{
+							"name": "defaultValue",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "deprecationReason",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "isDeprecated",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "type",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "__Schema",
+					"fields": [
+						{
+							"name": "directives",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "mutationType",
+							"type": {
+								"name": "__Type",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "queryType",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "subscriptionType",
+							"type": {
+								"name": "__Type",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "types",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						}
+					]
+				},
+				{
+					"name": "__Type",
+					"fields": [
+						{
+							"name": "description",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "enumValues",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "fields",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "inputFields",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "interfaces",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						},
+						{
+							"name": "kind",
+							"type": {
+								"name": null,
+								"kind": "NON_NULL"
+							}
+						},
+						{
+							"name": "name",
+							"type": {
+								"name": "String",
+								"kind": "SCALAR"
+							}
+						},
+						{
+							"name": "ofType",
+							"type": {
+								"name": "__Type",
+								"kind": "OBJECT"
+							}
+						},
+						{
+							"name": "possibleTypes",
+							"type": {
+								"name": null,
+								"kind": "LIST"
+							}
+						}
+					]
+				},
+				{
+					"name": "__TypeKind",
+					"fields": null
+				}
+			],
+			"queryType": {
+				"name": "Query"
+			}
+		}
+	}
+}

@@ -1,0 +1,970 @@
+type AdminDirection {
+  color: String
+  description: String
+  descriptionEng: String
+  icons: [Icon!]
+  id: ID!
+  idPwc: ID
+  marks: [AdminMark!]
+  name: String
+  nameEng: String
+  updatedAt: Timestamp
+  year: Year
+  yearId: ID
+}
+
+type AdminMark {
+  createdAt: Timestamp
+  dataSource: String
+  dataSourceEng: String
+  dataYear: String!
+  description: String
+  descriptionEng: String
+  direction: AdminDirection
+  directionId: ID
+  hasSmarteks: Boolean!
+  id: ID!
+  idPwc: ID
+  markType: MarkType
+  name: String
+  nameEng: String
+  oesr: Boolean!
+  priority: Boolean!
+  published: Boolean!
+  ru: Boolean!
+  smartekCode: String
+  smarteks: [Smartek!]
+  unit: Unit
+  updatedAt: Timestamp
+  weight: Float
+  year: Year!
+  yearId: ID!
+}
+
+type Agglomeration {
+  agglomerationMarks: [AgglomerationMark!]
+  description: String
+  descriptionEng: String
+  id: ID!
+  name: String
+  nameEng: String
+  photos: [Photo!]
+  position: Int
+  secondaryPhotos: [Photo!]
+  transliteratedTitle: String
+  updatedAt: Timestamp
+}
+
+type AgglomerationData {
+  directionsData: JSON!
+  marksData: JSON!
+}
+
+type AgglomerationMark {
+  id: ID!
+  mark: AdminMark!
+  markId: ID!
+  updatedAt: Timestamp
+  value: Float
+}
+
+type AttachFile {
+  contentType: String
+  extension: String
+  filename: String
+  id: ID!
+  size: String
+  title: String
+  titleEng: String
+  updatedAt: Timestamp
+  url: String
+}
+
+type AttachText {
+  id: ID!
+  text: String
+  textEng: String
+  updatedAt: Timestamp
+}
+
+type Banner {
+  id: ID
+  images: [Photo!]
+  link: String
+  name: String
+  nameEng: String
+  position: Int
+}
+
+type City {
+  centerLat: Float
+  centerLng: Float
+  cityType: CityType
+  cluster: Cluster
+  clusterId: ID
+  description: String
+  descriptionEng: String
+  descriptionIkp: String
+  descriptionIkpEng: String
+  id: ID!
+  idPwc: ID
+  isRus: Boolean
+  name: String
+  nameEng: String
+  photos: [Photo!]
+  position: Int
+  subject: String
+  subjectCode: ID
+  transliteratedTitle: String
+  updatedAt: Timestamp
+}
+
+type CityData {
+  directionsData: JSON!
+  marksData: JSON!
+  marksPointData: JSON
+}
+
+type CityStats {
+  directions: [MarkValue!]!
+  id: ID!
+  name: String!
+  transliteratedTitle: String
+  value: Float!
+}
+
+type CityType {
+  cities: [City!]
+  id: ID!
+  name: String
+  nameEng: String
+  updatedAt: Timestamp
+}
+
+type Cluster {
+  cities: [City!]
+  creativeName: String
+  creativeNameEng: String
+  description: String
+  descriptionEng: String
+  id: ID!
+  name: String
+  nameEng: String
+  position: Int
+  updatedAt: Timestamp
+}
+
+type ClusterStats {
+  cities: [CityStats!]!
+  directions: [MarkValue!]!
+  id: ID!
+}
+
+type Content {
+  citiesDesc: String
+  citiesDescEng: String
+  databaseDesc: String
+  databaseDescEng: String
+  id: ID!
+  mapDesc: String
+  mapDescEng: String
+  metodologyDesc: String
+  metodologyDescEng: String
+  metodologyDescOne: String
+  metodologyDescOneEng: String
+  metodologyDescTwo: String
+  metodologyDescTwoEng: String
+  platformDesc: String
+  platformDescEng: String
+  platformTaskDesc: String
+  platformTaskDescEng: String
+  updatedAt: Timestamp
+}
+
+type CreativeDirection {
+  average: Float
+  color: String
+  creativeMarks: [CreativeMark!]
+  description: String
+  descriptionEng: String
+  icons: [Icon!]
+  id: ID!
+  name: String
+  nameEng: String
+  updatedAt: Timestamp
+}
+
+type CreativeMark {
+  averageClusters: [MarkValue!]!
+  creativeDirection: CreativeDirection
+  creativeDirectionId: ID
+  description: String
+  descriptionEng: String
+  directionColor: String
+  id: ID!
+  name: String
+  nameEng: String
+  unit: Unit
+  unitShort: String
+  unitShortEng: String
+  updatedAt: Timestamp
+  zeroMax: Boolean!
+}
+
+type CreativeMarkValue {
+  absValue: Float
+  id: ID
+  unitShort: String
+  unitShortEng: String
+  value: Float
+}
+
+type CreativePage {
+  description: String
+  descriptionEng: String
+  id: ID!
+  images: [Photo!]
+  materialBlocks: [MaterialBlock!]
+  position: Int
+  publish: Boolean
+  title: String
+  titleEng: String
+  transliteratedTitle: String
+}
+
+type Direction {
+  color: String
+  description: String
+  descriptionEng: String
+  icons: [Icon!]
+  id: ID!
+  idPwc: ID
+  marks: [Mark!]
+  name: String
+  nameEng: String
+  updatedAt: Timestamp
+  year: Year
+  yearId: ID
+}
+
+input DirectionMultiplierInput {
+  directionId: ID!
+  multiplier: Int!
+}
+
+type EsgCity {
+  createdAt: Timestamp!
+  description: String!
+  descriptionEng: String!
+  esgCluster: EsgCluster
+  esgCompanies: [EsgCompany!]!
+  id: ID!
+  idEsg: ID
+  name: String!
+  nameEng: String!
+  updatedAt: Timestamp!
+}
+
+type EsgCluster {
+  createdAt: Timestamp!
+  description: String!
+  descriptionEng: String!
+  id: ID!
+  idEsg: ID
+  name: String!
+  nameEng: String!
+  updatedAt: Timestamp!
+}
+
+type EsgCompany {
+  createdAt: Timestamp!
+  id: ID!
+  link: String!
+  name: String!
+  nameEng: String!
+  photos: [Photo!]
+  updatedAt: Timestamp!
+}
+
+type EsgContent {
+  description: String!
+  descriptionEng: String!
+  logo: Icon
+  logoEng: Icon
+  researchFile: AttachFile
+  researchFileEng: AttachFile
+  title: String!
+  titleEng: String!
+}
+
+type EsgDirection {
+  color: String
+  description: String
+  descriptionEng: String
+  esgMarks: [EsgMark!]
+  id: ID!
+  idEsg: ID
+  name: String
+  nameEng: String
+  updatedAt: Timestamp
+}
+
+type EsgMark {
+  dataSource: String
+  dataSourceEng: String
+  dataYear: String!
+  description: String
+  descriptionEng: String
+  esgDirection: EsgDirection
+  esgDirectionColor: String
+  esgDirectionId: ID
+  id: ID!
+  idEsg: ID
+  markType: MarkType
+  name: String
+  nameEng: String
+  priority: Boolean!
+  published: Boolean!
+  unit: Unit
+  unitShort: String
+  unitShortEng: String
+  updatedAt: Timestamp
+}
+
+type Feedback {
+  createdAt: Timestamp
+  email: String
+  files: [AttachFile!]
+  fromUser: Boolean
+  fullname: String
+  id: ID
+  status: FeedbackStatus
+  text: String
+  userId: ID
+}
+
+input FeedbackCreateInput {
+  id: ID
+  status: FeedbackStatus
+  userId: ID
+  fullname: String
+  email: String
+  text: String
+  fileIds: [ID!]
+}
+
+enum FeedbackStatus {
+  OPENED
+  CLOSED
+  REJECTED
+}
+
+input FileCreateInput {
+  file: Upload
+}
+
+type Icon {
+  id: ID!
+  resizedUrl: String
+  thumbUrl: String
+  updatedAt: Timestamp
+  url: String
+  vignetteResizedUrl: String
+  vignetteUrl: String
+}
+
+# Represents untyped JSON
+scalar JSON
+
+type Link {
+  id: ID!
+  link: String
+  title: String
+  titleEng: String
+  updatedAt: Timestamp
+}
+
+type MapCitySelection {
+  averageClusterValue: Float
+  averageValue: Float
+  centerLat: Float
+  centerLng: Float
+  clusterId: ID
+  clusterName: String
+  clusterNameEng: String
+  description: String
+  descriptionEng: String
+  id: ID
+  name: String
+  nameEng: String
+  transliteratedTitle: String
+  transparencyPercent: Int
+  value: Float
+}
+
+type Mark {
+  dataSource: String
+  dataSourceEng: String
+  dataYear: String!
+  description: String
+  descriptionEng: String
+  direction: Direction
+  directionColor: String
+  directionId: ID
+  hasSmarteks: Boolean!
+  id: ID!
+  idPwc: ID
+  markType: MarkType
+  name: String
+  nameEng: String
+  oesr: Boolean!
+  priority: Boolean!
+  published: Boolean!
+  ru: Boolean!
+  smartekCode: String
+  smarteks: [Smartek!]
+  unit: Unit
+  unitShort: String
+  unitShortEng: String
+  updatedAt: Timestamp
+  weight: Float
+  year: Year!
+  yearId: ID!
+}
+
+enum MarkType {
+  STRAIGHT
+  REVERSED
+}
+
+type MarkValue {
+  id: ID
+  value: Float
+}
+
+type MaterialBlock {
+  files: [AttachFile!]
+  id: ID
+  images: [Photo!]
+  links: [Link!]
+  position: Int
+  texts: [AttachText!]
+  width: Width
+}
+
+type Mutation {
+  authorizedFeedbackCreate(input: FeedbackCreateInput!): Feedback
+  feedbackCreate(input: FeedbackCreateInput!): Feedback
+
+  # upload new file, use id to assign owner's file_ids
+  fileCreate(input: FileCreateInput!): AttachFile
+  fileDestroy(id: ID!): Boolean
+
+  # update file fields (except file itself) e.x position
+  fileUpdate(id: ID!, input: FileCreateInput!): AttachFile
+  sessionCreate(email: String!, password: String!): Session
+  sessionDestroy: Boolean
+  sessionRefresh(refreshToken: String!): Session
+}
+
+type News {
+  id: ID!
+  images: [Photo!]
+  materialBlocks: [MaterialBlock!]
+  publish: Boolean
+  publishTime: Timestamp
+  tags: [Tag!]
+  text: String
+  textEng: String
+  title: String
+  titleEng: String
+  transliteratedTitle: String
+}
+
+enum OrderDir {
+  DESC
+  ASC
+}
+
+input OrderInput {
+  type: OrderType
+  dir: OrderDir = DESC
+}
+
+enum OrderType {
+  NAME
+  CREATED_AT
+}
+
+type Partner {
+  engPhotos: [Photo!]
+  id: ID!
+  link: String
+  name: String
+  photos: [Photo!]
+  updatedAt: Timestamp
+}
+
+type Photo {
+  engResizedUrl: String
+  engThumbUrl: String
+  engUrl: String
+  id: ID!
+  resizedUrl: String
+  thumbUrl: String
+  updatedAt: Timestamp
+  url: String
+  vignetteResizedUrl: String
+  vignetteUrl: String
+}
+
+type Query {
+  agglomerations(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Agglomeration!]!
+  banners(
+    ids: [ID!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Banner!]!
+  cities(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    isRus: Boolean
+    clusterId: ID
+    cityTypeId: ID
+  ): [City!]!
+
+  # Return year of mark data collected for city
+  cityMarkDataYear(markId: ID!, cityId: ID!): String!
+  cityTypes(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [CityType!]!
+  clusters(
+    ids: [ID!]
+    search: String
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Cluster!]!
+  contents: Content!
+  creativeDirections(
+    ids: [ID!]
+    search: String
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [CreativeDirection!]!
+
+  # Return [[city_id, creative_direction_value]]
+  creativeDirectionsData(creativeDirectionId: ID!, clusterId: ID): [MarkValue!]!
+  creativeMarks(
+    ids: [ID!]
+    search: String
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    zeroMax: Boolean
+  ): [CreativeMark!]!
+
+  # Return [[city_id, creative_mark_point_value, abs_value, unit_short, unit_short_eng]]
+  creativeMarksData(creativeMarkId: ID!, clusterId: ID): [CreativeMarkValue!]!
+  creativePages(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    search: String
+  ): [CreativePage!]!
+  directions(
+    ids: [ID!]
+    search: String
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    yearId: ID
+  ): [Direction!]!
+
+  # Download agglomeration xlsx
+  downloadAgglomeration(agglomerationId: ID!, yearId: ID): String
+
+  # Download city xlsx
+  downloadCity(cityId: ID!, yearId: ID): String
+  esgCities(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    clusterId: ID
+    companyIds: [ID!]
+  ): [EsgCity!]!
+  esgClusters(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [EsgCluster!]!
+  esgCompanies(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [EsgCompany!]!
+  esgContents: EsgContent!
+  esgDirections(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [EsgDirection!]!
+  esgMarks(
+    ids: [ID!]
+    search: String
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [EsgMark!]!
+
+  # Return [[average(agglomeration_ids[0])..average(agglomeration_ids[-1]), average(all agglomerations,) min(all agglomerations), max(all agglomerations)]]
+  getAgglomerationsDbData(
+    markIds: [ID!]
+    directionIds: [ID!]
+    agglomerationIds: [ID!]!
+  ): AgglomerationData!
+  getClustersRatingData(directionId: ID!): RatingStats!
+  getCreativeClustersRatingData(creativeDirectionId: ID!): RatingStats!
+
+  # Return [[average(city_ids[0])..average(city_ids[-1]), average(cluster), averate(all cities,) min(all cities), max(all cities)]]
+  getCreativeDbData(
+    creativeMarkIds: [ID!]
+    creativeDirectionIds: [ID!]
+    cityIds: [ID!]!
+    clusterId: ID
+  ): CityData!
+
+  # Return [[city_id, creative_direction_value]]
+  getCreativeRatingData(clusterId: ID): [MarkValue!]!
+
+  # Return [[average(city_ids[0])..average(city_ids[-1]), average(cluster), averate(all cities,) min(all cities), max(all cities)]]
+  getDbData(
+    markIds: [ID!]
+    directionIds: [ID!]
+    cityIds: [ID!]!
+    clusterId: ID
+    includeOesr: Boolean
+  ): CityData!
+
+  # Return history of direction values for selected city
+  getDirectionDynamic(directionId: ID!, cityId: ID!): [ValueByYears!]
+
+  # Return [[average(city_ids[0])..average(city_ids[-1]), average(cluster), average(all cities,)]]
+  getEsgDbData(
+    markIds: [ID!]
+    directionIds: [ID!]
+    cityIds: [ID!]!
+    clusterId: ID
+  ): CityData!
+  getLogs(limit: Int, offset: Int, action: UserLogAction): [UserLog!]!
+
+  # Return direction heatmap of cities with transparancy percent
+  getMapCitiesByDirection(
+    directionId: ID!
+    clusterIds: [ID!]
+  ): [MapCitySelection!]
+
+  # Return mark heatmap of cities with transparancy percent
+  getMapCitiesByMark(markId: ID!, clusterIds: [ID!]): [MapCitySelection!]
+
+  # Return history of mark values for selected city
+  getMarkDynamic(markId: ID!, cityId: ID!): [ValueByYears!]
+
+  # Return top 5 cities by sum of multiplicated params and directional values
+  getParamsRank(
+    multipliers: [DirectionMultiplierInput!]!
+    clusterIds: [ID!]
+    cityTypeIds: [ID!]
+  ): [RankCitySelection!]
+  getProfile: User!
+
+  # Return [[city_id, direction_value]]
+  getRatingData(directionId: ID): JSON!
+
+  # Return top 5 cities by selected direction
+  getTopCitiesByDirection(
+    directionId: ID!
+    clusterIds: [ID!]
+  ): [TopCitySelection!]
+
+  # Return top 5 cities by selected mark
+  getTopCitiesByMark(markId: ID!, clusterIds: [ID!]): [TopCitySelection!]
+  marks(
+    ids: [ID!]
+    search: String
+    published: Boolean
+    order: OrderInput
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    ru: Boolean
+    oesr: Boolean
+    yearId: ID
+    directionId: ID
+  ): [Mark!]!
+  news(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+    search: String
+    tags: [String!]
+  ): [News!]!
+
+  # Return cities with selected marks
+  oesrCities(markIds: [ID!]): [City!]
+  partners(
+    ids: [ID!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Partner!]!
+  researches(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Research!]!
+  subindices(
+    ids: [ID!]
+    transliteratedTitles: [String!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Subindex!]!
+  tags: [Tag!]!
+  years(
+    id: ID
+    ids: [ID!]
+    limit: Int
+    offset: Int
+    updatedAfter: Timestamp
+    lastId: ID
+  ): [Year!]!
+}
+
+type RankCitySelection {
+  cityId: ID
+  cityName: String
+  cityNameEng: String
+  cityTypeId: ID
+  cityTypeName: String
+  cityTypeNameEng: String
+  clusterId: ID
+  clusterName: String
+  clusterNameEng: String
+  percent: Float
+  resultSum: Float
+  transliteratedTitle: String
+}
+
+type RatingStats {
+  clusters: [ClusterStats!]!
+  directions: [MarkValue!]!
+}
+
+type Research {
+  color: String
+  description: String
+  descriptionEng: String
+  icons: [Icon!]
+  id: ID
+  images: [Photo!]
+  materialBlocks: [MaterialBlock!]
+  name: String
+  nameEng: String
+  researchKeys: [ResearchKey!]
+  transliteratedTitle: String
+}
+
+type ResearchKey {
+  id: ID
+  name: String
+  nameEng: String
+  position: Int
+  value: Float
+}
+
+type Session {
+  accessToken: String!
+  expiresIn: Timestamp!
+  refreshToken: String!
+  user: User!
+}
+
+type Smartek {
+  id: ID!
+  name: String!
+  result: String!
+  slug: String!
+  task: String!
+  url: String!
+}
+
+type Subindex {
+  buttonName: String
+  buttonNameEng: String
+  description: String
+  descriptionEng: String
+  id: ID
+  images: [Photo!]
+  link: String
+  name: String
+  nameEng: String
+  position: Int
+  subindexPage: SubindexPage
+}
+
+type SubindexPage {
+  description: String
+  descriptionEng: String
+  files: [AttachFile!]
+  id: ID
+  images: [Photo!]
+  materialBlocks: [MaterialBlock!]
+  name: String
+  nameEng: String
+}
+
+type Tag {
+  id: ID
+  name: String
+  nameEng: String
+}
+
+# DateTime as timestamp
+scalar Timestamp
+
+type TopCitySelection {
+  cityTypeName: String
+  cityTypeNameEng: String
+  clusterName: String
+  clusterNameEng: String
+  id: ID
+  name: String
+  nameEng: String
+  placeNum: Int
+  transliteratedTitle: String
+  value: Float
+}
+
+type Unit {
+  id: ID!
+  name: String
+  nameEng: String
+  short: String
+  shortEng: String
+  updatedAt: Timestamp
+}
+
+scalar Upload
+
+type User {
+  apiKey: String
+  appointment: String
+  createdAt: Timestamp
+  email: String!
+  firstName: String!
+  id: ID!
+  images: [Photo!]
+  lastName: String!
+  organisation: String
+  patronymic: String
+}
+
+type UserLog {
+  action: UserLogAction
+  createdAt: Timestamp
+  id: ID
+  ipAddress: String
+  userId: ID
+}
+
+enum UserLogAction {
+  LOGIN
+  LOGOUT
+}
+
+type ValueByYears {
+  name: String
+  refValue: Float
+  value: Float
+  year: String
+}
+
+enum Width {
+  CENTER
+  FILL
+}
+
+type Year {
+  createdAt: Timestamp
+  defaultSelected: Boolean
+  id: ID
+  position: Int
+  status: YearStatus
+  updatedAt: Timestamp
+  year: Int
+}
+
+enum YearStatus {
+  PREPARATION
+  PUBLISHED
+  ARCHIVE
+}

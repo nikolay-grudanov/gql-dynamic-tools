@@ -1,0 +1,52 @@
+# Разрешаем сохранять env.yaml и requirements.txt
+!env.yaml
+!requirements.txt
+
+# Убиаем рабочие файлы
+data/*
+errors/*
+queries/*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+pipenv/
+
+# Локальные настройки и секреты
+*.env
+*.env.local
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swo
+*.swp
+
+# Логи и кэш
+*.log
+.cache/
+.coverage
+htmlcov/
+
+# Тесты
+.pytest_cache/
+test_results/
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Собственные добавления (если есть)
+# Например, если вы используете Docker:
+docker-compose.override.yml
+*.dockerignore
